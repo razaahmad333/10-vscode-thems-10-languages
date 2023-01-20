@@ -1,0 +1,591 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.filled {
+  color: #ff9292;
+}
+
+.outlined {
+  color: white;
+  text-shadow: 0px 2px 2px #ff9292;
+}
+
+nav {
+  width: 80%;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 25px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  color: #fd5f5f;
+  font-size: 1.5em;
+}
+
+nav a:hover {
+  -webkit-box-shadow: 0px 0px 3px 0px #ffdcdc;
+  box-shadow: 0px 0px 3px 0px #ffdcdc;
+}
+
+nav .middle {
+  display: none;
+  font-size: 2.2em;
+}
+
+@media (max-width: 768px) {
+  nav .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+  }
+  nav .left a {
+    padding: 5px 50px;
+  }
+  nav .middle {
+    display: none;
+  }
+  nav .right {
+    display: none;
+  }
+}
+
+.container {
+  position: relative;
+}
+
+.container .name {
+  color: #fd5f5f;
+  margin-top: 40px;
+  font-size: 8em;
+  text-align: center;
+}
+
+.container .designation {
+  font-size: 2em;
+  margin: 20px 0;
+  text-align: center;
+  color: #ff9292;
+}
+
+.container .contactLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.container .contactLinks a {
+  display: block;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 20px;
+  font-size: 2em;
+}
+
+.container .contactLinks a i {
+  color: #fd5f5f;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+
+.container .contactLinks a i:hover {
+  color: #ff9292;
+}
+
+.container .action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.container .action a {
+  display: block;
+  margin: 0 40px;
+  border-radius: 35px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 20px;
+  color: #fd5f5f;
+  -webkit-box-shadow: 0px 0px 5px #ffdcdc;
+  box-shadow: 0px 0px 5px #ffdcdc;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+
+.container .action a i {
+  font-size: 1em;
+  padding-right: 10px;
+  color: #fd5f5f;
+  text-shadow: none;
+}
+
+.container .action a:hover {
+  -webkit-box-shadow: 0px 0px 5px #ffb4b4;
+  box-shadow: 0px 0px 5px #ffb4b4;
+}
+
+.bgImage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
+
+.bgImage img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.container {
+  padding-top: 140px;
+}
+
+.container .me {
+  position: absolute;
+  top: -40px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: -1;
+}
+
+.container .me img {
+  border: 5px solid white;
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+@media (max-width: 968px) {
+  .container {
+    padding-top: 220px;
+  }
+  .container .me {
+    top: 10px;
+  }
+  .container .me img {
+    width: 200px;
+    height: 200px;
+  }
+  .container .name {
+    font-size: 2.8em;
+  }
+  .container .designation {
+    font-size: 1.3em;
+  }
+  .container .contactLinks a {
+    font-size: 1.2em;
+    padding: 20px 10px;
+  }
+  .container .action a {
+    margin: 0 10px;
+    font-size: 1em;
+    padding: 10px;
+  }
+}
+
+.projectSection {
+  margin-top: 120px;
+}
+
+.projectSection h1,
+.projectSection h2 {
+  font-size: 2.2em;
+  margin: 20px 0;
+  text-align: center;
+  color: #fd5f5f;
+}
+
+.projectSection .projects .projectVideo {
+  -webkit-box-shadow: 0px 0px 5px 0 #ffdcdc;
+  box-shadow: 0px 0px 5px 0 #ffdcdc;
+  margin: 0 10px;
+  border-radius: 30px;
+  height: 300px;
+  position: relative;
+  -webkit-transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+.projectSection .projects .projectVideo .projectImage {
+  height: 100%;
+  position: relative;
+}
+
+.projectSection .projects .projectVideo .projectImage img {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.projectSection .projects .projectVideo .projectImage .firstOne {
+  opacity: 1;
+}
+
+.projectSection .projects .projectVideo .projectImage .fadeIn {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.projectSection .projects .projectVideo .projectImage .fadeOut {
+  -webkit-animation: fadeOut 1s;
+  animation: fadeOut 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.projectSection .projects .projectVideo .info {
+  position: absolute;
+  border-radius: 30px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: transparent;
+  opacity: 0;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  -webkit-transition: opacity 0.1s ease-in-out;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.projectSection .projects .projectVideo .info h2 {
+  font-size: 1.5em;
+  margin: 0;
+  text-align: center;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  color: transparent;
+}
+
+.projectSection .projects .projectVideo .info p {
+  padding: 10px 0;
+  font-size: 1em;
+  margin: 0;
+  color: transparent;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  text-align: center;
+  height: 100px;
+}
+
+.projectSection .projects .projectVideo .info .techs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: transparent;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+.projectSection .projects .projectVideo .info .techs i {
+  font-size: 1.4em;
+  padding-right: 10px;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  color: transparent;
+}
+
+.projectSection .projects .projectVideo .info .projectLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0px;
+  position: absolute;
+  bottom: 0;
+}
+
+.projectSection .projects .projectVideo .info .projectLinks a {
+  display: block;
+  margin-right: 30px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 10px;
+  background-color: white;
+  color: transparent;
+  font-weight: 600;
+  -webkit-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
+}
+
+.projectSection .projects .projectVideo:hover {
+  -webkit-box-shadow: 0px 0px 5px 0 #ffb4b4;
+  box-shadow: 0px 0px 5px 0 #ffb4b4;
+}
+
+.projectSection .projects .projectVideo:hover .info {
+  opacity: 1;
+  background-color: white;
+}
+
+.projectSection .projects .projectVideo:hover .info h2 {
+  color: #fd5f5f;
+}
+
+.projectSection .projects .projectVideo:hover .info p {
+  color: #ff9292;
+}
+
+.projectSection .projects .projectVideo:hover .info a {
+  color: #fd5f5f;
+}
+
+.projectSection .projects .projectVideo:hover .info .techs {
+  color: #ff9292;
+}
+
+.projectSection .projects .projectVideo:hover .info .techs i {
+  color: #fd5f5f;
+}
+
+.projectSection .projects .projectVideo video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+@media (max-width: 968px) {
+  .projectSection {
+    margin-top: 90px;
+  }
+  .projectSection h1,
+  .projectSection h2 {
+    font-size: 2em;
+    margin: 20px 0;
+  }
+  .projectSection .projects .projectVideo {
+    -webkit-box-shadow: 0px 0px 5px 0 #ffdcdc;
+    box-shadow: 0px 0px 5px 0 #ffdcdc;
+    margin: 10px 0;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    height: 180px;
+  }
+  .projectSection .projects .projectVideo .projectImage img {
+    border-radius: 20px;
+  }
+  .projectSection .projects .projectVideo .info {
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .projectSection .projects .projectVideo .info p {
+    height: 70px;
+    font-size: 0.85em;
+  }
+  .projectSection .projects .projectVideo .info .techs {
+    font-size: 0.85em;
+  }
+  .projectSection .projects .projectVideo .info .projectLinks {
+    margin-bottom: 5px;
+  }
+  .projectSection .projects .projectVideo .info .projectLinks a {
+    margin-right: 10px;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  30% {
+    opacity: 0.5;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  30% {
+    opacity: 0.5;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0;
+  }
+}
+
+.skillSection {
+  padding: 20px 40px;
+  margin-bottom: 10px;
+}
+
+.skillSection h1,
+.skillSection h2 {
+  text-align: center;
+  font-size: 2.2em;
+  margin: 20px 0;
+  color: #fd5f5f;
+}
+
+.skillSection .core i {
+  font-size: 6em;
+  color: #fd5f5f;
+}
+
+.skillSection .core .name {
+  font-size: 1.5em;
+  margin: 20px 0;
+  text-align: center;
+  color: #ff9292;
+}
+
+.skillSection .skills i {
+  font-size: 4em;
+  color: #fd5f5f;
+}
+
+.skillSection .skillNames div {
+  text-align: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  position: relative;
+  border: 1px solid #ffe8e8;
+  overflow: hidden;
+}
+
+.skillSection .skillNames div .nameSkill {
+  display: block;
+  padding: 10px;
+  font-size: 1.1em;
+  color: #fd5f5f;
+}
+
+.skillSection .skillNames div .level {
+  position: absolute;
+  bottom: 0;
+  border-radius: 25px;
+  display: block;
+  background-color: #fd5f5f;
+  height: 3px;
+}
+
+@media (max-width: 968px) {
+  .skillSection {
+    padding: 0px 10px;
+  }
+  .skillSection h1,
+  .skillSection h2 {
+    margin: 0;
+    font-size: 1.7em;
+  }
+  .skillSection .core i {
+    font-size: 8em;
+  }
+  .skillSection .skills i {
+    font-size: 3em;
+    color: #fd5f5f;
+  }
+  .skillSection .skillNames div .nameSkill {
+    font-size: 0.85em;
+  }
+  .skillSection .skillNames div .level {
+    height: 3px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
